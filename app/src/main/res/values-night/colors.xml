@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Calculator button colors - Dark theme -->
+    <color name="btn_number">#37474F</color>
+    <color name="btn_operator">#7E57C2</color>
+    <color name="btn_clear">#FF7043</color>
+    <color name="btn_bracket">#546E7A</color>
+    <color name="btn_panel_bg">#1C1B2E</color>
+    <color name="display_text">#E0E0E0</color>
+</resources>
