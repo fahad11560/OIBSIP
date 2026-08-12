@@ -14,7 +14,7 @@ A fully functional calculator Android application developed as part of the Oasis
 - **Expression Evaluation**: Mozilla Rhino Javascript Engine
 
 ### Screenshots
-![calculator](https://user-images.githubusercontent.com/68380115/169702523-1a5d826d-fb0f-4377-bc58-f62d4ca53535.jpg)
+![calculator](./assets/calculator_screenshot.jpg)
 
 ### Installation
 1. Clone the repository: `git clone https://github.com/fahad11560/OIBSIP.git`
