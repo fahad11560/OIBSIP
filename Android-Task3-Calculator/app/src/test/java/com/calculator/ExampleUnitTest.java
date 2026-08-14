@@ -1,4 +1,4 @@
-package easy.tuto.easycalculator;
+package com.calculator;
 
 import org.junit.Test;
 

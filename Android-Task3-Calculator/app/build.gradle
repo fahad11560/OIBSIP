@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'easy.tuto.easycalculator'
+    namespace 'com.calculator'
     compileSdk 36
 
     defaultConfig {
-        applicationId "easy.tuto.easycalculator"
+        applicationId "com.calculator"
         minSdk 23
         targetSdk 36
         versionCode 1

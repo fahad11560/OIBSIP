@@ -1,4 +1,4 @@
-package easy.tuto.easycalculator;
+package com.calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
