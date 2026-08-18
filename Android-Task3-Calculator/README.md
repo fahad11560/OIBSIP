@@ -1,27 +1,40 @@
-## Calculator App (Task 3)
+# Task 3: Calculator App
 
-A fully functional calculator Android application developed as part of the Oasis Infobyte Student Internship Program (OIBSIP). This app provides basic arithmetic operations and evaluates expressions with proper precedence.
+## 📖 Description
+A fully functional calculator Android application developed as part of the Oasis Infobyte Student Internship Program (OIBSIP). This app provides basic arithmetic operations and evaluates mathematical expressions with proper operator precedence.
 
-### Features
-- Addition, Subtraction, Multiplication, Division.
-- Support for brackets to control calculation precedence.
-- Clear (C) and All Clear (AC) functionality.
-- Real-time expression parsing and evaluation.
+## 🎯 Features
+- ✅ Number buttons (0–9) and decimal point
+- ✅ Operator buttons: +, −, ×, ÷
+- ✅ Bracket support for controlling expression precedence
+- ✅ Equals (=) button to evaluate the full expression
+- ✅ Clear (C) button to delete last character
+- ✅ All Clear (AC) button to reset
+- ✅ Real-time result preview as expression is typed
+- ✅ Error handling (e.g., invalid expressions show "Err")
 
-### Tech Stack
-- **Language**: Java
-- **IDE**: Android Studio
-- **Expression Evaluation**: Mozilla Rhino Javascript Engine
+## 📸 Screenshots
+| Calculator |
+|------------|
+| ![Calculator Screenshot](assets/calculator_screenshot.png) |
 
-### Screenshots
-![calculator](assets/calculator_screenshot.png)
+## 🛠️ Tech Stack
+- **Language:** Java
+- **IDE:** Android Studio
+- **Min SDK:** API 23
+- **Expression Evaluation:** Mozilla Rhino JavaScript Engine
+- **Layout:** ConstraintLayout + MaterialButton
 
-### Installation
-1. Clone the repository: `git clone https://github.com/fahad11560/OIBSIP.git`
-2. Navigate to this folder: `cd OIBSIP/Android-Task3-Calculator`
-3. Open the project in Android Studio.
-4. Build the project using Gradle.
-5. Run the app on an emulator or a physical device.
+## 🚀 How to Run
+1. Clone: `git clone https://github.com/fahad11560/OIBSIP.git`
+2. Open `Android-Task3-Calculator` folder in Android Studio
+3. Build and run on emulator or physical device
 
----
-*This project was developed during my Android Development internship at Oasis Infobyte.*
+## 📹 Demo Video
+*Coming soon — will be added before final submission.*
+
+## 👤 Author
+**Mirza Fahad Baig**
+- Internship: Oasis Infobyte (AICTE)
+- Track: Android App Development
+- GitHub: [fahad11560](https://github.com/fahad11560/OIBSIP)
