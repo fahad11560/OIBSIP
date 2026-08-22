@@ -11,6 +11,8 @@ A beautiful, functional stopwatch Android application developed as part of the O
 - ✅ Buttons change visual state based on timer status (active/inactive)
 - ✅ Timer continues correctly if user navigates away and returns (onPause/onResume lifecycle)
 - ✅ **Bonus** — Lap functionality: records current time to a scrollable list below the display
+- ✅ **Dynamic Theming:** Seamlessly switches between Light and Dark modes based on system preferences
+- ✅ **Custom UI:** Features a high-resolution custom neon icon scaled natively using mipmap
 
 ## 📸 Screenshots
 | Stopwatch |
