@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
-        android:text="00:00:00:00"
+        android:text="@string/timer_default"
         android:textColor="@color/textColor"
         android:textSize="56sp"
         android:textStyle="bold"
@@ -37,7 +37,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
-            android:text="Reset"
+            android:text="@string/btn_reset"
             app:backgroundTint="@color/buttonTintSecondary"
             app:cornerRadius="24dp" />
 
@@ -45,7 +45,7 @@
             android:id="@+id/btnStartPause"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:text="Start"
+            android:text="@string/btn_start"
             app:backgroundTint="@color/colorStart"
             app:cornerRadius="24dp" />
 
@@ -54,7 +54,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="Lap"
+            android:text="@string/btn_lap"
             app:backgroundTint="@color/buttonTintSecondary"
             app:cornerRadius="24dp" />
     </LinearLayout>
@@ -65,7 +65,8 @@
         android:layout_height="0dp"
         android:layout_marginTop="32dp"
         android:layout_marginBottom="16dp"
-        android:layout_marginHorizontal="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

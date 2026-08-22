@@ -49,13 +49,13 @@ public class MainActivity extends AppCompatActivity {
                 startTime = SystemClock.uptimeMillis();
                 handler.postDelayed(updateTimerThread, 0);
                 isRunning = true;
-                btnStartPause.setText("Pause");
+                btnStartPause.setText(R.string.btn_pause);
                 btnStartPause.setBackgroundColor(ContextCompat.getColor(MainActivity.this, R.color.colorPause));
             } else {
                 timeSwapBuff += timeInMilliseconds;
                 handler.removeCallbacks(updateTimerThread);
                 isRunning = false;
-                btnStartPause.setText("Start");
+                btnStartPause.setText(R.string.btn_start);
                 btnStartPause.setBackgroundColor(ContextCompat.getColor(MainActivity.this, R.color.colorStart));
             }
         });
@@ -68,8 +68,8 @@ public class MainActivity extends AppCompatActivity {
             lapCount = 1;
             isRunning = false;
             handler.removeCallbacks(updateTimerThread);
-            tvTimer.setText("00:00:00:00");
-            btnStartPause.setText("Start");
+            tvTimer.setText(R.string.timer_default);
+            btnStartPause.setText(R.string.btn_start);
             btnStartPause.setBackgroundColor(ContextCompat.getColor(MainActivity.this, R.color.colorStart));
             lapListLayout.removeAllViews();
         });
@@ -77,7 +77,8 @@ public class MainActivity extends AppCompatActivity {
         btnLap.setOnClickListener(v -> {
             if (isRunning) {
                 TextView lapText = new TextView(this);
-                lapText.setText("Lap " + lapCount + " ➔ " + tvTimer.getText().toString());
+                String lapInfo = getString(R.string.lap_format, lapCount, tvTimer.getText().toString());
+                lapText.setText(lapInfo);
                 lapText.setTextColor(ContextCompat.getColor(MainActivity.this, R.color.textColor));
                 lapText.setTextSize(20f);
                 lapText.setPadding(0, 16, 0, 16);
