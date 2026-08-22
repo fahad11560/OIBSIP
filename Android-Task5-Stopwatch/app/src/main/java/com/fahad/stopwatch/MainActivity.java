@@ -9,6 +9,7 @@ import android.widget.TextView;
 import android.graphics.Color;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -49,13 +50,13 @@ public class MainActivity extends AppCompatActivity {
                 handler.postDelayed(updateTimerThread, 0);
                 isRunning = true;
                 btnStartPause.setText("Pause");
-                btnStartPause.setBackgroundColor(Color.parseColor("#F44336")); // Red for pause
+                btnStartPause.setBackgroundColor(ContextCompat.getColor(MainActivity.this, R.color.colorPause));
             } else {
                 timeSwapBuff += timeInMilliseconds;
                 handler.removeCallbacks(updateTimerThread);
                 isRunning = false;
                 btnStartPause.setText("Start");
-                btnStartPause.setBackgroundColor(Color.parseColor("#00C853")); // Green for start
+                btnStartPause.setBackgroundColor(ContextCompat.getColor(MainActivity.this, R.color.colorStart));
             }
         });
 
@@ -69,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
             handler.removeCallbacks(updateTimerThread);
             tvTimer.setText("00:00:00:00");
             btnStartPause.setText("Start");
-            btnStartPause.setBackgroundColor(Color.parseColor("#00C853"));
+            btnStartPause.setBackgroundColor(ContextCompat.getColor(MainActivity.this, R.color.colorStart));
             lapListLayout.removeAllViews();
         });
 
@@ -77,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
             if (isRunning) {
                 TextView lapText = new TextView(this);
                 lapText.setText("Lap " + lapCount + " ➔ " + tvTimer.getText().toString());
-                lapText.setTextColor(Color.WHITE);
+                lapText.setTextColor(ContextCompat.getColor(MainActivity.this, R.color.textColor));
                 lapText.setTextSize(20f);
                 lapText.setPadding(0, 16, 0, 16);
                 lapListLayout.addView(lapText, 0); // Add at the top

@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#121212"
+    android:background="@color/backgroundColor"
     tools:context=".MainActivity">
 
     <TextView
@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:text="00:00:00:00"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/textColor"
         android:textSize="56sp"
         android:textStyle="bold"
         android:fontFamily="sans-serif-light"
@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:text="Reset"
-            app:backgroundTint="#424242"
+            app:backgroundTint="@color/buttonTintSecondary"
             app:cornerRadius="24dp" />
 
         <com.google.android.material.button.MaterialButton
@@ -46,7 +46,7 @@
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:text="Start"
-            app:backgroundTint="#00C853"
+            app:backgroundTint="@color/colorStart"
             app:cornerRadius="24dp" />
 
         <com.google.android.material.button.MaterialButton
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="Lap"
-            app:backgroundTint="#424242"
+            app:backgroundTint="@color/buttonTintSecondary"
             app:cornerRadius="24dp" />
     </LinearLayout>
 
