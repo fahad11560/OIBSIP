@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">UnitConverter</string>
+
+    <!-- Labels -->
+    <string name="label_title">Unit Converter</string>
+    <string name="label_category">Category</string>
+    <string name="label_from">From</string>
+    <string name="label_to">To</string>
+    <string name="label_enter_value">Enter value</string>
+    <string name="label_result">Result</string>
+
+    <!-- Buttons -->
+    <string name="btn_convert">CONVERT</string>
+    <string name="btn_swap">Swap units</string>
+
+    <!-- Validation -->
+    <string name="error_empty_input">Please enter a value to convert</string>
+</resources>

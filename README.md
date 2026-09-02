@@ -14,7 +14,7 @@ OIBSIP/
 │   ├── app/src/...
 │   ├── README.md
 │   └── screenshots/
-└── Android-Task1-UnitConverter/           ← Unit Converter App (Future)
+└── Android-Task1-UnitConverter/           ← Unit Converter App ✅
     ├── app/src/...
     ├── README.md
     └── screenshots/
@@ -22,6 +22,7 @@ OIBSIP/
 
 ### Tasks Included
 
+*   [**Task 1: Unit Converter App**](./Android-Task1-UnitConverter/README.md) - A beautiful unit converter supporting length, weight, and temperature with Light/Dark mode and auto-conversion.
 *   [**Task 3: Calculator App**](./Android-Task3-Calculator/README.md) - A fully functional calculator Android application that provides basic arithmetic operations and evaluates expressions with proper precedence.
 *   [**Task 5: Stopwatch App**](./Android-Task5-Stopwatch/README.md) - A functional stopwatch app with Start, Pause, Reset, and Lap tracking features, built with Handler and SystemClock.
 
