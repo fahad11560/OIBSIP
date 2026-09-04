@@ -2,9 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="backgroundColor">#121212</color>
+    <color name="backgroundColor">#0D0D1F</color>
     <color name="textColor">#FFFFFF</color>
-    <color name="buttonTintSecondary">#424242</color>
-    <color name="colorStart">#00C853</color>
-    <color name="colorPause">#F44336</color>
+    <color name="colorAccent">#A855F7</color>
+    <color name="buttonBackground">#1C1C35</color>
+    <color name="tagBackground">#2D1B35</color>
+    <color name="tagTextColor">#F472B6</color>
+    <color name="ringColorBackground">#1A1A35</color>
 </resources>

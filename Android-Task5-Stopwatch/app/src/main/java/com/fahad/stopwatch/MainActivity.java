@@ -18,9 +18,10 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView tvTimer;
+    private TextView tvTimer, tvStartPauseLabel;
     private MaterialButton btnStartPause, btnReset, btnLap;
     private LinearLayout lapListLayout;
+    private android.widget.ProgressBar pbTimer;
 
     private Handler handler = new Handler();
     private long startTime = 0L, timeInMilliseconds = 0L, timeSwapBuff = 0L, updatedTime = 0L;
@@ -39,24 +40,26 @@ public class MainActivity extends AppCompatActivity {
         });
 
         tvTimer = findViewById(R.id.tvTimer);
+        tvStartPauseLabel = findViewById(R.id.tvStartPauseLabel);
         btnStartPause = findViewById(R.id.btnStartPause);
         btnReset = findViewById(R.id.btnReset);
         btnLap = findViewById(R.id.btnLap);
         lapListLayout = findViewById(R.id.lapListLayout);
+        pbTimer = findViewById(R.id.pbTimer);
 
         btnStartPause.setOnClickListener(v -> {
             if (!isRunning) {
                 startTime = SystemClock.uptimeMillis();
                 handler.postDelayed(updateTimerThread, 0);
                 isRunning = true;
-                btnStartPause.setText(R.string.btn_pause);
-                btnStartPause.setBackgroundColor(ContextCompat.getColor(MainActivity.this, R.color.colorPause));
+                btnStartPause.setIcon(ContextCompat.getDrawable(MainActivity.this, R.drawable.ic_pause));
+                tvStartPauseLabel.setText(R.string.btn_pause);
             } else {
                 timeSwapBuff += timeInMilliseconds;
                 handler.removeCallbacks(updateTimerThread);
                 isRunning = false;
-                btnStartPause.setText(R.string.btn_start);
-                btnStartPause.setBackgroundColor(ContextCompat.getColor(MainActivity.this, R.color.colorStart));
+                btnStartPause.setIcon(ContextCompat.getDrawable(MainActivity.this, R.drawable.ic_play));
+                tvStartPauseLabel.setText(R.string.btn_start);
             }
         });
 
@@ -68,10 +71,11 @@ public class MainActivity extends AppCompatActivity {
             lapCount = 1;
             isRunning = false;
             handler.removeCallbacks(updateTimerThread);
-            tvTimer.setText(R.string.timer_default);
-            btnStartPause.setText(R.string.btn_start);
-            btnStartPause.setBackgroundColor(ContextCompat.getColor(MainActivity.this, R.color.colorStart));
+            tvTimer.setText(getString(R.string.timer_default));
+            btnStartPause.setIcon(ContextCompat.getDrawable(MainActivity.this, R.drawable.ic_play));
+            tvStartPauseLabel.setText(R.string.btn_start);
             lapListLayout.removeAllViews();
+            pbTimer.setProgress(0);
         });
 
         btnLap.setOnClickListener(v -> {
@@ -80,8 +84,10 @@ public class MainActivity extends AppCompatActivity {
                 String lapInfo = getString(R.string.lap_format, lapCount, tvTimer.getText().toString());
                 lapText.setText(lapInfo);
                 lapText.setTextColor(ContextCompat.getColor(MainActivity.this, R.color.textColor));
-                lapText.setTextSize(20f);
+                lapText.setTextSize(18f);
+                lapText.setGravity(android.view.Gravity.CENTER);
                 lapText.setPadding(0, 16, 0, 16);
+                lapText.setAlpha(0.8f);
                 lapListLayout.addView(lapText, 0); // Add at the top
                 lapCount++;
             }
@@ -93,12 +99,13 @@ public class MainActivity extends AppCompatActivity {
             timeInMilliseconds = SystemClock.uptimeMillis() - startTime;
             updatedTime = timeSwapBuff + timeInMilliseconds;
 
-            int hours = (int) (updatedTime / 3600000);
-            int mins = (int) (updatedTime / 60000) % 60;
+            int mins = (int) (updatedTime / 60000);
             int secs = (int) (updatedTime / 1000) % 60;
             int milliseconds = (int) ((updatedTime % 1000) / 10);
 
-            tvTimer.setText(String.format(Locale.getDefault(), "%02d:%02d:%02d:%02d", hours, mins, secs, milliseconds));
+            tvTimer.setText(String.format(Locale.getDefault(), "%02d:%02d:%02d", mins, secs, milliseconds));
+            pbTimer.setProgress(secs * 100 / 60);
+            
             handler.postDelayed(this, 10);
         }
     };
