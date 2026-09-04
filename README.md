@@ -6,7 +6,7 @@ This repository contains the various Android development tasks completed as part
 ```
 OIBSIP/
 ├── README.md                              ← Main repo overview
-├── Android-Task3-Calculator/              ← Calculator App
+├── Android-Task3-Calculator/              ← Calculator App ✅
 │   ├── app/src/...
 │   ├── README.md
 │   └── screenshots/
