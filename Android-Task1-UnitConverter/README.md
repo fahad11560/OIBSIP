@@ -13,9 +13,10 @@ A colorful and highly functional Unit Converter Android application developed as
 - ✅ Input validation to prevent crashes from empty or invalid data.
 
 ## 📸 Screenshots
-| Unit Converter |
-|----------------|
-| *Screenshots will be added before final submission* |
+
+| Length (Light Mode) | Weight (Light Mode) | Dark Mode |
+| :---: | :---: | :---: |
+| <img src="screenshots/light_theme_lenght.png" width="260" /> | <img src="screenshots/light_theme_weight.png" width="260" /> | <img src="screenshots/dark_theme.png" width="260" /> |
 
 ## 🛠️ Tech Stack
 - **Language:** Java
