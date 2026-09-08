@@ -15,9 +15,10 @@ A beautiful, functional stopwatch Android application developed as part of the O
 - ✅ **Custom UI:** Features a high-resolution custom neon icon scaled natively using mipmap
 
 ## 📸 Screenshots
-| Stopwatch |
-|-----------|
-| *Screenshots will be added before final submission* |
+
+| Light Mode | Dark Mode | Laps & Timer Running |
+| :---: | :---: | :---: |
+| <img src="screenshots/stopwatch_lightTheme.png" width="260" alt="Stopwatch Light Mode" /> | <img src="screenshots/stopwatch1_darkTheme.png" width="260" alt="Stopwatch Dark Mode" /> | <img src="screenshots/stopwatch_dark.png" width="260" alt="Stopwatch Laps and Running State" /> |
 
 ## 🛠️ Tech Stack
 - **Language:** Java
@@ -32,7 +33,8 @@ A beautiful, functional stopwatch Android application developed as part of the O
 3. Build and run on emulator or physical device
 
 ## 📹 Demo Video
-*Coming soon — will be added before final submission.*
+Watch the app demo on LinkedIn:  
+🔗 **[Stopwatch Demo Video & LinkedIn Post](https://lnkd.in/p/dwEQfw6j)**
 
 ## 👤 Author
 **Mirza Fahad Baig**
