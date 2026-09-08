@@ -1,7 +1,8 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Outer Shadow/Glow (Optional, but let's stick to clean ring) -->
     <item>
         <shape android:shape="ring"
-            android:thickness="8dp"
+            android:thickness="12dp"
             android:useLevel="false">
             <solid android:color="@color/ringColorBackground" />
         </shape>
@@ -12,12 +13,14 @@
             android:toDegrees="270">
             <shape
                 android:shape="ring"
-                android:thickness="8dp"
+                android:thickness="12dp"
                 android:useLevel="true">
                 <gradient
                     android:startColor="@color/colorAccent"
-                    android:endColor="#D8B4FE"
+                    android:centerColor="@color/colorAccentLight"
+                    android:endColor="@color/colorAccent"
                     android:type="sweep" />
+                <stroke android:width="1dp" android:color="#20000000"/>
             </shape>
         </rotate>
     </item>

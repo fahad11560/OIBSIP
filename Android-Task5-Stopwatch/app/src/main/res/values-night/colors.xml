@@ -2,11 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="backgroundColor">#0D0D1F</color>
-    <color name="textColor">#FFFFFF</color>
-    <color name="colorAccent">#A855F7</color>
-    <color name="buttonBackground">#1C1C35</color>
-    <color name="tagBackground">#2D1B35</color>
-    <color name="tagTextColor">#F472B6</color>
-    <color name="ringColorBackground">#1A1A35</color>
+    <color name="backgroundColor">#0F172A</color>
+    <color name="surfaceColor">#1E293B</color>
+    <color name="textColor">#F8FAFC</color>
+    <color name="textColorSecondary">#94A3B8</color>
+    <color name="colorAccent">#818CF8</color>
+    <color name="colorAccentLight">#A5B4FC</color>
+    <color name="buttonBackground">#1E293B</color>
+    <color name="ringColorBackground">#334155</color>
+    <color name="lapItemColor">#1E293B</color>
 </resources>
