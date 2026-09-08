@@ -15,10 +15,13 @@ import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,10 +30,10 @@ public class MainActivity extends AppCompatActivity {
     private Spinner spinnerCategory, spinnerFrom, spinnerTo;
     private EditText etInput;
     private Button btnConvert;
-    private ImageButton btnSwap;
+    private ImageButton btnSwap, btnThemeToggle;
     private TextView tvResult;
 
-    // Data
+    // ... (rest of data)
     private final String[] categories = {"Length", "Weight", "Temperature"};
 
     private final String[] lengthUnits = {
@@ -68,6 +71,9 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // Apply saved theme before onCreate
+        applySavedTheme();
+
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
@@ -85,6 +91,11 @@ public class MainActivity extends AppCompatActivity {
         btnConvert = findViewById(R.id.btnConvert);
         btnSwap = findViewById(R.id.btnSwap);
         tvResult = findViewById(R.id.tvResult);
+        btnThemeToggle = findViewById(R.id.btnThemeToggle);
+
+        // --- Theme Toggle Logic ---
+        updateThemeIcon();
+        btnThemeToggle.setOnClickListener(v -> toggleTheme());
 
         // --- Category spinner ---
         ArrayAdapter<String> categoryAdapter = new ArrayAdapter<>(
@@ -250,5 +261,42 @@ public class MainActivity extends AppCompatActivity {
      */
     private void resetResult() {
         tvResult.setText("---");
+    }
+
+    private void toggleTheme() {
+        int currentNightMode = getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
+        if (currentNightMode == Configuration.UI_MODE_NIGHT_YES) {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+            saveThemePreference(false);
+        } else {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+            saveThemePreference(true);
+        }
+    }
+
+    private void updateThemeIcon() {
+        int currentNightMode = getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
+        if (currentNightMode == Configuration.UI_MODE_NIGHT_YES) {
+            btnThemeToggle.setImageResource(R.drawable.ic_light_mode);
+        } else {
+            btnThemeToggle.setImageResource(R.drawable.ic_dark_mode);
+        }
+    }
+
+    private void saveThemePreference(boolean isDarkMode) {
+        SharedPreferences sharedPreferences = getSharedPreferences("ThemePrefs", MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putBoolean("IsDarkMode", isDarkMode);
+        editor.apply();
+    }
+
+    private void applySavedTheme() {
+        SharedPreferences sharedPreferences = getSharedPreferences("ThemePrefs", MODE_PRIVATE);
+        boolean isDarkMode = sharedPreferences.getBoolean("IsDarkMode", false);
+        if (isDarkMode) {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+        } else {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+        }
     }
 }

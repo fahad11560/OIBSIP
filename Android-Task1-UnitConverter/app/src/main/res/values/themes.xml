@@ -13,4 +13,11 @@
     </style>
 
     <style name="Theme.UnitConverter" parent="Base.Theme.UnitConverter" />
+
+    <style name="Theme.UnitConverter.Splash" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_gradient</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
 </resources>

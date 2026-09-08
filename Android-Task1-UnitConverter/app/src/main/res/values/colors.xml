@@ -19,4 +19,9 @@
     
     <color name="gradientStart">#FF9A9E</color>
     <color name="gradientEnd">#FECFEF</color>
+
+    <!-- Splash Screen Colors -->
+    <color name="splash_gradient_start">#667eea</color>
+    <color name="splash_gradient_end">#764ba2</color>
+    <color name="splash_text_color">#FFFFFF</color>
 </resources>

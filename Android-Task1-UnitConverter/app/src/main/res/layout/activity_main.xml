@@ -18,14 +18,30 @@
             android:id="@+id/tvTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:text="@string/label_title"
+            android:textColor="@color/colorPrimary"
             android:textSize="28sp"
             android:textStyle="bold"
-            android:textColor="@color/colorPrimary"
-            android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Theme Toggle Button -->
+        <ImageButton
+            android:id="@+id/btnThemeToggle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/btn_toggle_theme"
+            android:padding="12dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_dark_mode"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/colorPrimary" />
 
         <!-- ===== Category Card ===== -->
         <com.google.android.material.card.MaterialCardView

@@ -15,4 +15,9 @@
 
     <!-- Validation -->
     <string name="error_empty_input">Please enter a value to convert</string>
+    <string name="btn_toggle_theme">Toggle Theme</string>
+
+    <!-- Splash Screen -->
+    <string name="splash_slogan">Precision in every conversion</string>
+    <string name="app_version">v1.0</string>
 </resources>
