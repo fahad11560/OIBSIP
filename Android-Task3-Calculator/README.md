@@ -14,9 +14,9 @@ A fully functional calculator Android application developed as part of the Oasis
 - ✅ Error handling (e.g., invalid expressions show "Err")
 
 ## 📸 Screenshots
-| Calculator |
-|------------|
-| ![Calculator Screenshot](assets/calculator_screenshot.png) |
+| Screenshot 1 | Screenshot 2 |
+|:---:|:---:|
+| ![Calculator Screenshot 1](assets/Screenshot_20260811_113343.png) | ![Calculator Screenshot 2](assets/Screenshot_20260811_113545.png) |
 
 ## 🛠️ Tech Stack
 - **Language:** Java
@@ -31,7 +31,7 @@ A fully functional calculator Android application developed as part of the Oasis
 3. Build and run on emulator or physical device
 
 ## 📹 Demo Video
-*Coming soon — will be added before final submission.*
+▶️ [Watch Demo on LinkedIn](https://www.linkedin.com/posts/fahadbaig15_oasisinfobyte-androiddev-androiddeveloper-activity-7494013526475243520-xmpw?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGq0th4BSykRKbRa28Iy_0RpFfA8QPz32bs)
 
 ## 👤 Author
 **Mirza Fahad Baig**
