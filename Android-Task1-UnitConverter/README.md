@@ -16,7 +16,7 @@ A colorful and highly functional Unit Converter Android application developed as
 
 | Light Mode | Dark Mode |
 | :---: | :---: |
-| <img src="screenshots/UnitConv_light.png" width="280" alt="Unit Converter Light Mode" /> | <img src="screenshots/UnitConv_dark.png" width="280" alt="Unit Converter Dark Mode" /> |
+| ![Light Mode](screenshots/UnitConv_light.png) | ![Dark Mode](screenshots/UnitConv_dark.png) |
 
 ## 🛠️ Tech Stack
 - **Language:** Java
