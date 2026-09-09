@@ -16,7 +16,7 @@ A colorful and highly functional Unit Converter Android application developed as
 
 | Light Mode | Dark Mode |
 | :---: | :---: |
-| ![Light Mode](screenshots/UnitConv_light.png) | ![Dark Mode](screenshots/UnitConv_dark.png) |
+| ![Light Mode](https://raw.githubusercontent.com/fahad11560/OIBSIP/main/Android-Task1-UnitConverter/screenshots/UnitConv_light.png) | ![Dark Mode](https://raw.githubusercontent.com/fahad11560/OIBSIP/main/Android-Task1-UnitConverter/screenshots/UnitConv_dark.png) |
 
 ## 🛠️ Tech Stack
 - **Language:** Java
