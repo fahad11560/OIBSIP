@@ -16,7 +16,7 @@ A fully functional calculator Android application developed as part of the Oasis
 ## 📸 Screenshots
 | Screenshot 1 | Screenshot 2 |
 |:---:|:---:|
-| ![Calculator Screenshot 1](assets/Screenshot_20260811_113343.png) | ![Calculator Screenshot 2](assets/Screenshot_20260811_113545.png) |
+| ![Calculator Screenshot 1](screenshots/Screenshot_20260811_113343.png) | ![Calculator Screenshot 2](screenshots/Screenshot_20260811_113545.png) |
 
 ## 🛠️ Tech Stack
 - **Language:** Java
