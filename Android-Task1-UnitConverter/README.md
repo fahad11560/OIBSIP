@@ -14,9 +14,9 @@ A colorful and highly functional Unit Converter Android application developed as
 
 ## 📸 Screenshots
 
-| Length (Light Mode) | Weight (Light Mode) | Dark Mode |
-| :---: | :---: | :---: |
-| <img src="screenshots/light_theme_lenght.png" width="260" /> | <img src="screenshots/light_theme_weight.png" width="260" /> | <img src="screenshots/dark_theme.png" width="260" /> |
+| Light Mode | Dark Mode |
+| :---: | :---: |
+| <img src="screenshots/UnitConv_light.png" width="280" /> | <img src="screenshots/unitConv_dark.png" width="280" /> |
 
 ## 🛠️ Tech Stack
 - **Language:** Java
